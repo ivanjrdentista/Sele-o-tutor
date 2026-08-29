@@ -28,10 +28,9 @@ Método Coluna já rascunhado. Arquivo da página: `index.html`.
 ## O que foi decidido nesta passada
 - **Preço exposto** nos 3 formatos, usando as faixas reais do posicionamento (segue a própria recomendação do dossiê: expor qualifica o lead e evita reunião perdida).
 - **Seção de prova removida** do HTML (não havia depoimento, case ou número real — ficar vazia/com aviso na página piora a conversão; melhor ausente).
-- **Botão do CTA final aponta para WhatsApp** (`wa.me/5585998297777`, DDD 85 = Fortaleza) com mensagem pré-preenchida. Único canal de contato na página, como recomenda a metodologia.
+- **Botão do CTA final aponta para WhatsApp** (`wa.me/5585998297777`, DDD 85 = Fortaleza) com mensagem pré-preenchida. Único canal de contato na página, como recomenda a metodologia. É o número pessoal do Ivan (não um WhatsApp Business) — decisão dele manter assim; `wa.me` funciona igual em número pessoal.
 
 ## PENDENTE (para o Ivan preencher)
-- [ ] Confirmar se o número de WhatsApp usado (85998297777) é o número comercial correto e se está com o WhatsApp Business ativo.
 - [ ] Dados verificáveis na seção "Quem sou": nº de municípios atendidos, estados, anos de atuação, formação acadêmica, projetos citáveis publicamente.
 - [ ] Depoimento nominal (cargo + cidade) ou mini-case (situação → o que foi feito → o que mudou) para reintroduzir uma seção de prova.
 - [ ] Nome do método confirmado (o pack cita "Coluna" como principal e cita "Rede que Aprende" / "CIT" como alternativas) — checar marca e domínio antes de divulgar.
