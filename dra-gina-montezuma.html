@@ -87,6 +87,7 @@ header{position:absolute;top:0;left:0;right:0;z-index:30;padding:26px 0}
 nav.menu{display:flex;align-items:center;gap:28px}
 nav.menu a{font-family:"Poppins",sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92}
 nav.menu a:hover{opacity:1}
+nav.menu a.btn-light{color:var(--ink);opacity:1}
 @media (max-width:960px){nav.menu{display:none}}
 
 /* ---------- hero ---------- */
@@ -138,6 +139,12 @@ nav.menu a:hover{opacity:1}
   letter-spacing:.04em;padding:20px;border:1.5px dashed var(--brass-light);
   background:linear-gradient(160deg,var(--sand-2),var(--sand));line-height:1.6;
 }
+.collage .block.img-block{padding:0;border-style:solid;position:relative}
+.collage .block.img-block img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.collage .block.img-block .fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;padding:20px}
+.collage .block.img-block.img-missing{border-style:dashed}
+.collage .block.img-block.img-missing img{display:none}
+.collage .block.img-block.img-missing .fallback{display:flex}
 .collage .b1{left:0;top:20px;width:66%;height:78%}
 .collage .b2{right:0;bottom:0;width:52%;height:56%;background:linear-gradient(160deg,#fff,var(--sand-2));box-shadow:0 20px 40px -18px rgba(28,28,28,.25)}
 
@@ -298,7 +305,10 @@ footer a{text-decoration:underline}
 <section id="sobre">
   <div class="wrap about">
     <div class="collage" aria-hidden="true">
-      <div class="block b1">📷<br>Retrato da Dra. Gina<br><code style="opacity:.85">assets/gina-retrato.jpg</code></div>
+      <div class="block b1 img-block">
+        <img src="assets/gina-retrato.jpg" alt="" onerror="this.parentElement.classList.add('img-missing')">
+        <div class="fallback">📷<br>Retrato da Dra. Gina<br><code style="opacity:.85">assets/gina-retrato.jpg</code></div>
+      </div>
       <div class="block b2">📷<br>Foto de estudo/planejamento<br>(sugerida nos roteiros — a produzir)</div>
     </div>
     <div>
