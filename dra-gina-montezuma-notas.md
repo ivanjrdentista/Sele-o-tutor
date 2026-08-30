@@ -1,4 +1,14 @@
-# Site — Dra. Gina Montezuma (v2, com conteúdo real)
+# Site — Dra. Gina Montezuma (v2.1 — pronta para apresentação)
+
+**Status:** QA visual feito (screenshot em desktop 1440px e mobile 390px via
+Chromium headless). Dois bugs reais encontrados e corrigidos nessa
+passada: botão "Solicitar informações" do menu com texto invisível
+(branco sobre branco) e foto real ainda não ligada no bloco de colagem da
+seção "Sobre". Site está pronto para ser mostrado à Dra. Gina como
+material de revisão — os pendentes abaixo (endereço, instituição de
+docência, aprovação final de texto) continuam em aberto, mas nada bloqueia
+a apresentação.
+
 
 Arquivo da página: `dra-gina-montezuma.html`.
 Design system de referência (absorvido da Higiia): `design-system-higiia.md`.
