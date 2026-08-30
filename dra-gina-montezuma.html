@@ -1,0 +1,445 @@
+<!-- SITE DRA. GINA MONTEZUMA — v1 | referência de design: higiia.com.br (absorvido via screenshots, ver design-system-higiia.md)
+NEGOCIO: consultório/prática médica da Dra. Gina Montezuma | ESPECIALIDADE: NÃO CONFIRMADA — assumida como "Medicina Estética e Bem-Estar" por analogia à referência (Higiia). TROCAR se for outra área (dermatologia clínica, ginecologia, etc.)
+FONTE DE CONTEÚDO: nenhuma — não foi possível acessar o projeto em manus.im (bloqueio de rede) nem receber brief da médica. Todo o conteúdo factual (nome de procedimentos, números, bio, CRM, telefone, fotos) está marcado como PLACEHOLDER e precisa ser substituído por informação real antes de publicar.
+CTA-DESTINO: placeholder — WhatsApp fictício (55XXXXXXXXXXX), trocar por número real
+PALETA/TIPO: ver design-system-higiia.md (brass #AD8A52 sobre paper #FFFFFF/sand #EDEBE7, Fraunces + Poppins)
+PENDENTE CRÍTICO: nome completo/tratamento correto, especialidade real, cidade/endereço, CRM, procedimentos oferecidos, fotos reais, telefone/WhatsApp, depoimentos reais (os aqui são só estrutura de exemplo)
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dra. Gina Montezuma — [Especialidade a confirmar] | Estética e Bem-Estar</title>
+<meta name="description" content="Dra. Gina Montezuma — [descrição a confirmar]. Cuidado personalizado, resultado com segurança.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brass:#AD8A52;
+  --brass-dark:#8F6F3E;
+  --brass-light:#D9C49B;
+  --ink:#1C1C1C;
+  --body:#5C5C5C;
+  --muted:#767676;
+  --paper:#FFFFFF;
+  --sand:#EDEBE7;
+  --sand-2:#F6F5F3;
+  --line:#D8D5CF;
+  --whatsapp:#25D366;
+  --maxw:1260px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--body);
+  font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-weight:300;font-size:16.5px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+section{padding:96px 0}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;color:var(--ink);line-height:1.2;margin:0 0 18px}
+h1{font-size:clamp(36px,5.4vw,58px);font-weight:500}
+h2{font-size:clamp(28px,3.4vw,40px)}
+h3{font-size:20px;margin-bottom:8px}
+p{margin:0 0 16px;max-width:62ch}
+.eyebrow{
+  font-family:"Poppins",sans-serif;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--brass);font-weight:600;margin:0 0 14px;
+}
+
+/* placeholder marker — visível no navegador, some fácil na hora de editar */
+.tbd{
+  border-bottom:1.5px dashed var(--brass);color:var(--brass-dark);
+  cursor:help;font-style:normal;
+}
+.tbd-box{
+  display:block;border:1.5px dashed var(--brass);border-radius:10px;
+  padding:14px 18px;margin:18px 0;color:var(--brass-dark);
+  font-size:13px;line-height:1.6;background:#FBF8F2;
+}
+.tbd-box b{color:var(--ink)}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:"Poppins",sans-serif;font-weight:500;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;
+  padding:16px 34px;border-radius:999px;transition:transform .18s ease,background .18s ease,color .18s ease;
+  border:1.5px solid transparent;
+}
+.btn-primary{background:var(--brass);color:#fff}
+.btn-primary:hover{background:var(--brass-dark);transform:translateY(-2px)}
+.btn-outline{background:transparent;border-color:var(--brass);color:var(--brass)}
+.btn-outline:hover{background:var(--brass);color:#fff}
+.btn-light{background:#fff;border-color:#fff;color:var(--ink)}
+
+/* ---------- header ---------- */
+header{
+  position:absolute;top:0;left:0;right:0;z-index:30;padding:26px 0;
+}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:"Fraunces",serif;font-size:22px;letter-spacing:.02em;color:#fff}
+.logo b{font-weight:600}
+nav.menu{display:flex;align-items:center;gap:30px}
+nav.menu a{
+  font-family:"Poppins",sans-serif;font-size:12.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:#fff;opacity:.92;
+}
+nav.menu a:hover{opacity:1}
+@media (max-width:920px){nav.menu{display:none}}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:92vh;display:flex;align-items:center;
+  background:linear-gradient(115deg,#2b2b2b 0%,#4a4a4a 45%,#6b6b66 100%);
+  overflow:hidden;color:#fff;padding-top:60px;
+}
+.hero-arcs{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.hero-arcs svg{position:absolute;right:-10%;top:-10%;width:80%;height:120%}
+.hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 32px;width:100%}
+.hero-col{max-width:640px}
+.hero h1{color:#fff;margin-bottom:22px}
+.hero .lead{color:#E7E4DD;font-size:18px;max-width:52ch;margin-bottom:34px}
+.hero-cta-note{font-size:13px;color:#CFCBC0;margin-top:14px;font-family:"Poppins",sans-serif}
+.hero-photo-note{
+  position:absolute;right:6%;bottom:0;top:0;width:38%;
+  display:flex;align-items:center;justify-content:center;
+  border-left:1px dashed rgba(255,255,255,.35);
+}
+.hero-photo-note .ph{
+  text-align:center;color:rgba(255,255,255,.75);font-size:12.5px;
+  font-family:"Poppins",sans-serif;letter-spacing:.06em;line-height:1.6;
+  border:1.5px dashed rgba(255,255,255,.45);border-radius:14px;padding:26px 20px;
+}
+@media (max-width:920px){.hero-photo-note{display:none}}
+
+/* ---------- stats bar ---------- */
+.stats{background:var(--sand);padding:0}
+.stats-inner{
+  max-width:var(--maxw);margin:0 auto;padding:44px 32px;
+  display:flex;gap:56px;flex-wrap:wrap;
+}
+.stat b{
+  font-family:"Fraunces",serif;font-size:clamp(30px,3.6vw,42px);color:var(--brass);
+  font-weight:500;display:block;
+}
+.stat span{font-size:14px;color:var(--muted)}
+
+/* ---------- sobre / collage ---------- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+@media (max-width:880px){.about{grid-template-columns:1fr}}
+.collage{position:relative;height:420px}
+.collage .block{
+  position:absolute;border-radius:16px;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  color:var(--brass-dark);font-family:"Poppins",sans-serif;font-size:12.5px;
+  letter-spacing:.06em;padding:20px;border:1.5px dashed var(--brass-light);
+  background:linear-gradient(160deg,var(--sand-2),var(--sand));
+}
+.collage .b1{left:0;top:20px;width:66%;height:78%}
+.collage .b2{right:0;bottom:0;width:52%;height:56%;background:linear-gradient(160deg,#fff,var(--sand-2));box-shadow:0 20px 40px -18px rgba(28,28,28,.25)}
+
+/* ---------- especialidades / cards ---------- */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{margin-bottom:0}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+@media (max-width:1080px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+.proc-card{
+  position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;
+  background:linear-gradient(200deg,#EADFC7,var(--brass-light) 60%,var(--brass) 130%);
+  display:flex;align-items:flex-end;padding:18px;
+}
+.proc-card::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,16,8,.65) 100%);
+}
+.proc-card span{
+  position:relative;z-index:1;color:#fff;font-family:"Fraunces",serif;font-size:17px;font-weight:500;
+}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.chip{
+  font-family:"Poppins",sans-serif;font-size:13px;color:var(--ink);
+  border-bottom:1px solid var(--line);padding:8px 2px;
+}
+
+/* ---------- depoimentos ---------- */
+.testi-wrap{background:var(--sand);}
+.testi-track{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:760px){.testi-track{grid-template-columns:1fr}}
+.testi-card{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--line)}
+.testi-card b{font-family:"Fraunces",serif;color:var(--brass-dark);font-size:16px;display:block;margin-bottom:10px}
+.testi-card p{font-size:14.5px;margin:0}
+
+/* ---------- redes ---------- */
+.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+@media (max-width:760px){.social-grid{grid-template-columns:repeat(2,1fr)}}
+.social-card{
+  position:relative;aspect-ratio:4/5;border-radius:12px;overflow:hidden;
+  background:linear-gradient(200deg,#2c2c2c,#4a4a45);
+  display:flex;flex-direction:column;justify-content:space-between;padding:16px;color:#fff;
+}
+.social-card .play{
+  width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);
+  display:flex;align-items:center;justify-content:center;align-self:center;margin:auto;
+}
+.social-card .cap{font-size:12.5px;font-family:"Poppins",sans-serif;line-height:1.5}
+
+/* ---------- contato ---------- */
+.contact{background:var(--sand-2)}
+.contact-inner{max-width:640px;margin:0 auto;text-align:center}
+.contact h2{text-align:center}
+form.contact-form{margin-top:34px;text-align:left}
+.field{margin-bottom:16px}
+.field input,.field textarea{
+  width:100%;font-family:"Poppins",sans-serif;font-size:14.5px;color:var(--ink);
+  border:1.5px solid var(--ink);border-radius:999px;padding:15px 22px;background:#fff;
+  outline:none;transition:border-color .15s ease;
+}
+.field textarea{border-radius:20px;min-height:120px;resize:vertical}
+.field input:focus,.field textarea:focus{border-color:var(--brass)}
+form.contact-form .btn{width:100%;justify-content:center;border:none;cursor:pointer}
+.contact-note{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center}
+
+/* ---------- médica / credenciais ---------- */
+.doc{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
+@media (max-width:760px){.doc{grid-template-columns:1fr}}
+.doc-photo{
+  aspect-ratio:3/4;border-radius:16px;background:linear-gradient(165deg,var(--sand-2),var(--sand));
+  border:1.5px dashed var(--brass-light);display:flex;align-items:center;justify-content:center;
+  color:var(--brass-dark);font-size:12.5px;text-align:center;padding:20px;font-family:"Poppins",sans-serif;
+}
+.creds{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid var(--line)}
+.creds li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:18px;font-size:14.5px}
+.creds b{font-family:"Poppins",sans-serif;font-weight:600;font-size:11px;color:var(--brass-dark);flex:0 0 96px;padding-top:2px;letter-spacing:.06em;text-transform:uppercase}
+
+/* ---------- faq ---------- */
+details{border-bottom:1px solid var(--line);padding:2px 0}
+summary{cursor:pointer;padding:19px 34px 19px 0;font-size:16px;font-weight:500;color:var(--ink);position:relative;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:16px;color:var(--brass);font-size:20px;transition:transform .2s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 18px;font-size:14.5px;margin:0}
+
+/* ---------- whatsapp float ---------- */
+.wa-float{
+  position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;
+  background:var(--whatsapp);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 24px -8px rgba(0,0,0,.4);z-index:50;
+}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+footer{background:var(--ink);color:#B9B6AE;padding:44px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-wrap">
+    <a href="#inicio" class="logo">Dra. <b>Gina Montezuma</b></a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato" class="btn btn-light">Agende sua consulta</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-arcs" aria-hidden="true">
+    <svg viewBox="0 0 800 800" fill="none">
+      <circle cx="500" cy="380" r="360" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+      <circle cx="480" cy="420" r="280" stroke="rgba(255,255,255,.28)" stroke-width="1"/>
+      <circle cx="460" cy="460" r="200" stroke="rgba(255,255,255,.22)" stroke-width="1"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-col">
+      <p class="eyebrow" style="color:#D9C49B">Dra. Gina Montezuma · <span class="tbd" title="Confirmar especialidade real">Medicina Estética e Bem-Estar</span></p>
+      <h1><span class="tbd" title="Headline placeholder — trocar por algo que reflita a proposta real da Dra. Gina">Sua beleza, cuidada com ciência e sensibilidade.</span></h1>
+      <p class="lead">Atendimento personalizado, resultado natural e segurança em cada etapa — em <span class="tbd" title="confirmar cidade">[cidade a confirmar]</span>.</p>
+      <a class="btn btn-primary" href="#contato">Agende sua consulta</a>
+      <p class="hero-cta-note">Resposta em até 1 dia útil.</p>
+    </div>
+  </div>
+  <div class="hero-photo-note" aria-hidden="true">
+    <div class="ph">📷<br>Foto da Dra. Gina<br>ou da clínica aqui<br><span style="opacity:.7">(substituir este bloco)</span></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><b class="tbd" title="Número real">+XX</b><span>anos de atuação</span></div>
+    <div class="stat"><b class="tbd" title="Número real">+X.XXX</b><span>pacientes atendidos</span></div>
+    <div class="stat"><b class="tbd" title="Número real">+X.XXX</b><span>procedimentos realizados</span></div>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="wrap about">
+    <div class="collage" aria-hidden="true">
+      <div class="block b1">📷<br>Foto do consultório<br>ou da Dra. Gina</div>
+      <div class="block b2">📷<br>Foto secundária</div>
+    </div>
+    <div>
+      <p class="eyebrow">Sobre</p>
+      <h2>Cuidado que olha para a pessoa, não só para o procedimento.</h2>
+      <p class="tbd" title="Substituir por bio real da Dra. Gina">[Parágrafo de apresentação — formação, trajetória, filosofia de atendimento da Dra. Gina Montezuma. Substituir por texto real; não inventar formação ou tempo de experiência.]</p>
+      <p class="tbd" title="Substituir por texto real">[Segundo parágrafo — diferencial de abordagem, valores do consultório, o que a paciente pode esperar da experiência.]</p>
+      <a class="btn btn-outline" href="#duvidas">Saiba mais</a>
+    </div>
+  </div>
+</section>
+
+<!-- ESPECIALIDADES -->
+<section id="especialidades" style="background:var(--sand-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Especialidades</h2>
+      <a class="btn btn-outline" href="#contato">Falar sobre meu caso</a>
+    </div>
+    <div class="tbd-box"><b>Placeholder.</b> Os 5 procedimentos abaixo são genéricos de estética facial/bem-estar, só para preencher o layout no padrão da referência. Substitua pelos procedimentos que a Dra. Gina realmente realiza — sem isso o site pode prometer algo que ela não oferece.</div>
+    <div class="cards">
+      <div class="proc-card"><span>Harmonização facial</span></div>
+      <div class="proc-card"><span>Toxina botulínica</span></div>
+      <div class="proc-card"><span>Preenchimento labial</span></div>
+      <div class="proc-card"><span>Bioestimuladores</span></div>
+      <div class="proc-card"><span>Skinbooster</span></div>
+    </div>
+    <p style="margin-top:30px;font-family:'Fraunces',serif;font-size:20px;color:var(--ink)">Outras áreas</p>
+    <div class="chips">
+      <span class="chip">Rosto</span>
+      <span class="chip">Pele</span>
+      <span class="chip">Corpo</span>
+      <span class="chip">Bem-estar</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="testi-wrap" id="depoimentos">
+  <div class="wrap">
+    <p class="eyebrow">Pacientes</p>
+    <h2>O que dizem sobre o atendimento</h2>
+    <div class="tbd-box"><b>Placeholder — NÃO publicar assim.</b> Os depoimentos abaixo são exemplos de estrutura (como os da Higiia, com iniciais), não relatos reais. Depoimento fabricado atribuído a paciente real é antiético e pode configurar propaganda enganosa em publicidade médica (CFM). Troque por depoimentos reais e autorizados, ou remova a seção até ter.</div>
+    <div class="testi-track">
+      <div class="testi-card"><b>[Iniciais]</b><p>[Exemplo de estrutura — depoimento real do paciente entra aqui, com autorização.]</p></div>
+      <div class="testi-card"><b>[Iniciais]</b><p>[Exemplo de estrutura — depoimento real do paciente entra aqui, com autorização.]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REDES -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow" style="text-align:center;display:block">Conteúdo</p>
+    <h2 style="text-align:center">Acompanhe nas redes sociais</h2>
+    <div class="tbd-box"><b>Placeholder.</b> Substituir pelos posts/reels reais (embed do Instagram) da Dra. Gina, ou remover a seção se ela ainda não publica conteúdo educativo.</div>
+    <div class="social-grid">
+      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
+      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
+      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
+      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contato">
+  <div class="wrap contact-inner">
+    <p class="eyebrow">Contato</p>
+    <h2>Entre em contato!</h2>
+    <p>Preencha os dados abaixo — a mensagem é enviada diretamente pelo WhatsApp.</p>
+    <form class="contact-form" id="contactForm">
+      <div class="field"><input type="text" id="f-nome" placeholder="Nome" required></div>
+      <div class="field"><input type="tel" id="f-whats" placeholder="WhatsApp" required></div>
+      <div class="field"><input type="email" id="f-email" placeholder="E-mail"></div>
+      <div class="field"><textarea id="f-msg" placeholder="Mensagem"></textarea></div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <p class="contact-note">Ao enviar, você será direcionado ao WhatsApp com a mensagem já preenchida.</p>
+  </div>
+</section>
+
+<!-- SOBRE A MÉDICA / CREDENCIAIS -->
+<section>
+  <div class="wrap doc">
+    <div class="doc-photo">📷<br>Foto da Dra. Gina<br>Montezuma aqui</div>
+    <div>
+      <p class="eyebrow">Quem atende</p>
+      <h2>Dra. Gina Montezuma</h2>
+      <p class="tbd" title="Substituir por bio profissional real">[Bio profissional curta — formação, especialização, tempo de atuação. Não inventar títulos ou registros.]</p>
+      <ul class="creds">
+        <li><b>CRM</b><span class="tbd" title="Número real do CRM, obrigatório em publicidade médica">CRM/[UF] XXXXX — confirmar</span></li>
+        <li><b>RQE</b><span class="tbd" title="Se aplicável">RQE XXXX — confirmar, se houver</span></li>
+        <li><b>Formação</b><span class="tbd" title="Formação real">[Graduação, residência, especializações reais]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas" style="background:var(--sand-2)">
+  <div class="wrap">
+    <p class="eyebrow">Dúvidas frequentes</p>
+    <h2>Perguntas que as pacientes costumam fazer</h2>
+    <details>
+      <summary>Como funciona a primeira consulta?</summary>
+      <p class="tbd" title="Descrever processo real">[Descrever o processo real de avaliação/consulta da Dra. Gina.]</p>
+    </details>
+    <details>
+      <summary>Quais formas de pagamento são aceitas?</summary>
+      <p class="tbd" title="Confirmar formas de pagamento">[Confirmar: cartão, parcelamento, convênio, etc.]</p>
+    </details>
+    <details>
+      <summary>Onde fica o consultório?</summary>
+      <p class="tbd" title="Endereço real">[Endereço completo e referências de localização.]</p>
+    </details>
+  </div>
+</section>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.03 3C9.35 3 3.9 8.42 3.9 15.07c0 2.36.65 4.56 1.79 6.45L3 29l7.68-2.62a12.9 12.9 0 0 0 5.35 1.16h.01c6.68 0 12.13-5.42 12.13-12.07C28.17 8.42 22.72 3 16.03 3zm0 22.03h-.01a10 10 0 0 1-5.1-1.4l-.36-.21-3.79 1.3 1.24-3.73-.24-.38a9.97 9.97 0 0 1-1.53-5.32c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93a9.9 9.9 0 0 1 2.92 7.05c0 5.5-4.48 9.98-9.99 9.98zm5.47-7.48c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.2-.24-.57-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<footer>
+  <div class="wrap">
+    <div>Dra. Gina Montezuma · <span class="tbd" title="confirmar especialidade">Especialidade a confirmar</span> · <span class="tbd" title="confirmar cidade">Cidade a confirmar</span></div>
+    <div><a href="#contato">Agendar consulta</a></div>
+  </div>
+</footer>
+
+<script>
+// PLACEHOLDER: trocar pelo WhatsApp real da Dra. Gina (formato 55DDNÚMERO, só dígitos)
+var WHATSAPP_NUMERO = "55XXXXXXXXXXX";
+
+function waLink(msg){
+  return "https://wa.me/" + WHATSAPP_NUMERO + "?text=" + encodeURIComponent(msg);
+}
+
+document.getElementById('waFloat').href = waLink("Olá! Gostaria de mais informações.");
+
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var nome = document.getElementById('f-nome').value.trim();
+  var whats = document.getElementById('f-whats').value.trim();
+  var msg = document.getElementById('f-msg').value.trim();
+  var text = "Olá! Meu nome é " + nome + " (WhatsApp: " + whats + ").";
+  if (msg) text += " Mensagem: " + msg;
+  window.open(waLink(text), "_blank", "noopener");
+});
+</script>
+</body>
+</html>
