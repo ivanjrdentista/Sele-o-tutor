@@ -55,10 +55,12 @@ ao ar.
 O pedido original do usuário foi replicar a identidade visual da Higiia
 (dourado/brass sobre branco e areia), enquanto os próprios documentos de
 estratégia da Dra. Gina recomendavam outra direção (verde profundo/azul-
-petróleo). Perguntei e o usuário confirmou: **manter o dourado da Higiia**.
-Decisão final, não é mais um ponto em aberto. O gradiente do hero ficou
-num tom verde-acinzentado como único aceno à sugestão de marca dela; o
-resto da paleta é 100% Higiia.
+petróleo). O usuário confirmou manter o dourado da Higiia — e depois pediu
+para tirar até o tom esverdeado que eu tinha deixado só no gradiente do
+hero (como aceno à sugestão de marca dela). Removido: o hero agora usa o
+mesmo cinza-carvão neutro da Higiia (`#2b2b2b` → `#6b6b66`), sem nenhum
+verde na página além do ícone padrão do WhatsApp. Paleta 100% Higiia,
+decisão final.
 
 ## Regras de compliance aplicadas (Resolução CFO-196/2019, citada nos docs)
 - Sem imagem de antes/depois, sem imagem de procedimento/transcurso.
