@@ -69,12 +69,12 @@ resto da paleta é 100% Higiia.
 - [x] ~~WhatsApp real~~ — confirmado pelo usuário: `55 85 99050679`, já
       ativo no botão flutuante e no formulário de contato.
 - [x] ~~Decisão de paleta~~ — confirmado manter o dourado da Higiia.
-- [ ] **Foto real salva como arquivo** — recebida no chat (duas vezes, mesmo
-      retrato), mas este ambiente não permite salvar a imagem em disco a
-      partir de uma mensagem. Ver `assets/README.md`: basta colocar o
-      arquivo em `assets/gina-retrato.jpg` que ele aparece automaticamente
-      no hero e na seção de autoridade (já tem fallback elegante em CSS
-      enquanto o arquivo não existe).
+- [x] ~~Foto real salva como arquivo~~ — resolvido. O arquivo original
+      (14,76 MB) foi enviado pelo usuário via GitHub (sem querer, numa
+      branch de outra tarefa: `claude/criar-pagina-uj82bj`), recuperado de
+      lá e salvo em `assets/gina-retrato.jpg` já redimensionado/otimizado
+      para web (1200×1800, ~244 KB, sem EXIF). Aparece automaticamente no
+      hero e na seção de autoridade.
 - [ ] **Endereço do consultório** em Fortaleza-CE (usado no FAQ, ainda placeholder).
 - [ ] **Confirmar instituição(ões) de docência** — os documentos mencionam
       docência mas não citam a instituição específica.
