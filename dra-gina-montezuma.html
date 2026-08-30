@@ -1,17 +1,20 @@
-<!-- SITE DRA. GINA MONTEZUMA — v1 | referência de design: higiia.com.br (absorvido via screenshots, ver design-system-higiia.md)
-NEGOCIO: consultório/prática médica da Dra. Gina Montezuma | ESPECIALIDADE: NÃO CONFIRMADA — assumida como "Medicina Estética e Bem-Estar" por analogia à referência (Higiia). TROCAR se for outra área (dermatologia clínica, ginecologia, etc.)
-FONTE DE CONTEÚDO: nenhuma — não foi possível acessar o projeto em manus.im (bloqueio de rede) nem receber brief da médica. Todo o conteúdo factual (nome de procedimentos, números, bio, CRM, telefone, fotos) está marcado como PLACEHOLDER e precisa ser substituído por informação real antes de publicar.
-CTA-DESTINO: placeholder — WhatsApp fictício (55XXXXXXXXXXX), trocar por número real
-PALETA/TIPO: ver design-system-higiia.md (brass #AD8A52 sobre paper #FFFFFF/sand #EDEBE7, Fraunces + Poppins)
-PENDENTE CRÍTICO: nome completo/tratamento correto, especialidade real, cidade/endereço, CRM, procedimentos oferecidos, fotos reais, telefone/WhatsApp, depoimentos reais (os aqui são só estrutura de exemplo)
+<!-- SITE DRA. GINA MONTEZUMA — v2 | referência de design: higiia.com.br (absorvido via screenshots, ver design-system-higiia.md)
+NEGOCIO: Dra. Gina Montezuma — Cirurgiã-dentista, Mestre em Ortodontia, Especialista em Harmonização Orofacial (HOF). CRO-CE 5039. Atendimento privado em Fortaleza-CE. Também atua em gestão de saúde pública (trajetória institucional) e docência; nova frente de cursos/mentorias em preparação.
+FONTE DE CONTEÚDO: 5 documentos reais fornecidos pelo usuário (diagnóstico e plano de Instagram, estratégia de tráfego pago, roteiros de conteúdo aprovados, brief de homepage) + 1 foto real da Dra. Gina. Todo o conteúdo textual abaixo foi extraído ou adaptado desses documentos — nada de formação, número ou claim foi inventado.
+POSICIONAMENTO-ÂNCORA (do documento "Melhoria estratégica"): "A Dra. Gina ajuda pessoas a compreenderem possibilidades de cuidado odontológico individualizado, com planejamento, experiência clínica e uma visão integrada de técnica, organização e responsabilidade."
+COMPLIANCE (CFO Res. 196/2019, ver docs): sem antes/depois, sem imagem de procedimento, sem "resultado garantido"/"transformação garantida", sem gatilho de medo/urgência, sem depoimento sem autorização por escrito, identificação profissional (nome + CRO) obrigatória, cargo institucional (gestão pública) tratado como trajetória — nunca como endosso comercial da prática privada.
+CTA-DESTINO: placeholder — WhatsApp fictício (55XXXXXXXXXXX), nenhum dos documentos fornecidos continha o número real
+PALETA/TIPO: Higiia (brass #AD8A52 sobre paper/sand, Fraunces + Poppins) — ver design-system-higiia.md. NOTA: os próprios documentos da Dra. Gina recomendam paleta diferente (off-white/areia + verde profundo ou azul-petróleo + acento terroso); mantive Higiia por ser o pedido explícito do usuário — ver dra-gina-montezuma-notas.md para a tensão entre as duas direções.
+FOTO REAL: recebida no chat (retrato, fundo escuro, blusa preta drapeada, brincos), mas sem acesso a bytes de arquivo neste ambiente — não pôde ser salva no repositório. Ver instrução no HTML de onde colocar o arquivo.
+PENDENTE CRÍTICO: WhatsApp real, endereço do consultório, arquivo da foto real, aprovação da Dra. Gina sobre todo texto técnico (exigência explícita dos próprios documentos dela)
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dra. Gina Montezuma — [Especialidade a confirmar] | Estética e Bem-Estar</title>
-<meta name="description" content="Dra. Gina Montezuma — [descrição a confirmar]. Cuidado personalizado, resultado com segurança.">
+<title>Dra. Gina Montezuma — Ortodontia e Harmonização Orofacial | Fortaleza-CE</title>
+<meta name="description" content="Dra. Gina Montezuma, cirurgiã-dentista, Mestre em Ortodontia e especialista em Harmonização Orofacial (HOF). Planejamento individualizado, cuidado responsável. CRO-CE 5039 — Fortaleza-CE.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -44,8 +47,8 @@ a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
 section{padding:96px 0}
 h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;color:var(--ink);line-height:1.2;margin:0 0 18px}
-h1{font-size:clamp(36px,5.4vw,58px);font-weight:500}
-h2{font-size:clamp(28px,3.4vw,40px)}
+h1{font-size:clamp(34px,5vw,54px);font-weight:500}
+h2{font-size:clamp(28px,3.4vw,38px)}
 h3{font-size:20px;margin-bottom:8px}
 p{margin:0 0 16px;max-width:62ch}
 .eyebrow{
@@ -54,10 +57,7 @@ p{margin:0 0 16px;max-width:62ch}
 }
 
 /* placeholder marker — visível no navegador, some fácil na hora de editar */
-.tbd{
-  border-bottom:1.5px dashed var(--brass);color:var(--brass-dark);
-  cursor:help;font-style:normal;
-}
+.tbd{border-bottom:1.5px dashed var(--brass);color:var(--brass-dark);cursor:help;font-style:normal}
 .tbd-box{
   display:block;border:1.5px dashed var(--brass);border-radius:10px;
   padding:14px 18px;margin:18px 0;color:var(--brass-dark);
@@ -80,56 +80,52 @@ p{margin:0 0 16px;max-width:62ch}
 .btn-light{background:#fff;border-color:#fff;color:var(--ink)}
 
 /* ---------- header ---------- */
-header{
-  position:absolute;top:0;left:0;right:0;z-index:30;padding:26px 0;
-}
+header{position:absolute;top:0;left:0;right:0;z-index:30;padding:26px 0}
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-family:"Fraunces",serif;font-size:22px;letter-spacing:.02em;color:#fff}
+.logo{font-family:"Fraunces",serif;font-size:21px;letter-spacing:.02em;color:#fff}
 .logo b{font-weight:600}
-nav.menu{display:flex;align-items:center;gap:30px}
-nav.menu a{
-  font-family:"Poppins",sans-serif;font-size:12.5px;letter-spacing:.14em;
-  text-transform:uppercase;color:#fff;opacity:.92;
-}
+nav.menu{display:flex;align-items:center;gap:28px}
+nav.menu a{font-family:"Poppins",sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92}
 nav.menu a:hover{opacity:1}
-@media (max-width:920px){nav.menu{display:none}}
+@media (max-width:960px){nav.menu{display:none}}
 
 /* ---------- hero ---------- */
 .hero{
-  position:relative;min-height:92vh;display:flex;align-items:center;
-  background:linear-gradient(115deg,#2b2b2b 0%,#4a4a4a 45%,#6b6b66 100%);
+  position:relative;min-height:88vh;display:flex;align-items:center;
+  background:linear-gradient(120deg,#20302c 0%,#3c5148 45%,#6b7a6b 100%);
   overflow:hidden;color:#fff;padding-top:60px;
 }
-.hero-arcs{position:absolute;inset:0;opacity:.5;pointer-events:none}
-.hero-arcs svg{position:absolute;right:-10%;top:-10%;width:80%;height:120%}
+.hero-arcs{position:absolute;inset:0;opacity:.45;pointer-events:none}
+.hero-arcs svg{position:absolute;right:-8%;top:-8%;width:78%;height:118%}
 .hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 32px;width:100%}
-.hero-col{max-width:640px}
-.hero h1{color:#fff;margin-bottom:22px}
-.hero .lead{color:#E7E4DD;font-size:18px;max-width:52ch;margin-bottom:34px}
-.hero-cta-note{font-size:13px;color:#CFCBC0;margin-top:14px;font-family:"Poppins",sans-serif}
-.hero-photo-note{
-  position:absolute;right:6%;bottom:0;top:0;width:38%;
-  display:flex;align-items:center;justify-content:center;
-  border-left:1px dashed rgba(255,255,255,.35);
-}
-.hero-photo-note .ph{
-  text-align:center;color:rgba(255,255,255,.75);font-size:12.5px;
-  font-family:"Poppins",sans-serif;letter-spacing:.06em;line-height:1.6;
-  border:1.5px dashed rgba(255,255,255,.45);border-radius:14px;padding:26px 20px;
-}
-@media (max-width:920px){.hero-photo-note{display:none}}
+.hero-col{max-width:660px}
+.hero h1{color:#fff;margin-bottom:20px}
+.hero .lead{color:#E7E4DD;font-size:17.5px;max-width:56ch;margin-bottom:14px}
+.hero .cred{font-family:"Poppins",sans-serif;font-size:13px;color:#CFCBC0;letter-spacing:.04em;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-cta-note{font-size:13px;color:#CFCBC0;margin-top:16px;font-family:"Poppins",sans-serif}
 
-/* ---------- stats bar ---------- */
-.stats{background:var(--sand);padding:0}
-.stats-inner{
-  max-width:var(--maxw);margin:0 auto;padding:44px 32px;
-  display:flex;gap:56px;flex-wrap:wrap;
+.hero-photo{
+  position:absolute;right:0;bottom:0;top:0;width:36%;
+  border-left:1px solid rgba(255,255,255,.15);
 }
-.stat b{
-  font-family:"Fraunces",serif;font-size:clamp(30px,3.6vw,42px);color:var(--brass);
-  font-weight:500;display:block;
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.hero-photo .fallback{
+  display:none;width:100%;height:100%;align-items:center;justify-content:center;
+  text-align:center;color:rgba(255,255,255,.75);font-size:12.5px;font-family:"Poppins",sans-serif;
+  letter-spacing:.04em;line-height:1.6;padding:26px;
 }
-.stat span{font-size:14px;color:var(--muted)}
+.hero-photo.img-missing img{display:none}
+.hero-photo.img-missing .fallback{display:flex}
+@media (max-width:960px){.hero-photo{display:none}}
+
+/* ---------- territórios bar ---------- */
+.territories{background:var(--sand)}
+.terr-inner{max-width:var(--maxw);margin:0 auto;padding:40px 32px;display:flex;gap:0;flex-wrap:wrap}
+.terr{flex:1 1 220px;padding:0 28px;border-left:1px solid var(--line)}
+.terr:first-child{border-left:none;padding-left:0}
+.terr b{font-family:"Fraunces",serif;font-size:16.5px;color:var(--ink);font-weight:500;display:block;margin-bottom:4px}
+.terr span{font-size:13px;color:var(--muted)}
 
 /* ---------- sobre / collage ---------- */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -139,56 +135,69 @@ nav.menu a:hover{opacity:1}
   position:absolute;border-radius:16px;overflow:hidden;
   display:flex;align-items:center;justify-content:center;text-align:center;
   color:var(--brass-dark);font-family:"Poppins",sans-serif;font-size:12.5px;
-  letter-spacing:.06em;padding:20px;border:1.5px dashed var(--brass-light);
-  background:linear-gradient(160deg,var(--sand-2),var(--sand));
+  letter-spacing:.04em;padding:20px;border:1.5px dashed var(--brass-light);
+  background:linear-gradient(160deg,var(--sand-2),var(--sand));line-height:1.6;
 }
 .collage .b1{left:0;top:20px;width:66%;height:78%}
 .collage .b2{right:0;bottom:0;width:52%;height:56%;background:linear-gradient(160deg,#fff,var(--sand-2));box-shadow:0 20px 40px -18px rgba(28,28,28,.25)}
 
-/* ---------- especialidades / cards ---------- */
-.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:40px;flex-wrap:wrap}
+/* ---------- áreas de atuação ---------- */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:36px;flex-wrap:wrap}
 .sec-head h2{margin-bottom:0}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
-@media (max-width:1080px){.cards{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
-.proc-card{
-  position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;
-  background:linear-gradient(200deg,#EADFC7,var(--brass-light) 60%,var(--brass) 130%);
-  display:flex;align-items:flex-end;padding:18px;
+.areas{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:760px){.areas{grid-template-columns:1fr}}
+.area-card{
+  border-radius:14px;padding:30px;background:linear-gradient(165deg,var(--sand-2),var(--sand));
+  border:1px solid var(--line);
 }
-.proc-card::after{
-  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,16,8,.65) 100%);
-}
-.proc-card span{
-  position:relative;z-index:1;color:#fff;font-family:"Fraunces",serif;font-size:17px;font-weight:500;
-}
-.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.chip{
-  font-family:"Poppins",sans-serif;font-size:13px;color:var(--ink);
-  border-bottom:1px solid var(--line);padding:8px 2px;
-}
+.area-card .tag{font-family:"Poppins",sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);display:block;margin-bottom:10px}
+.area-card p{font-size:15px;margin:0}
 
-/* ---------- depoimentos ---------- */
-.testi-wrap{background:var(--sand);}
-.testi-track{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-@media (max-width:760px){.testi-track{grid-template-columns:1fr}}
-.testi-card{background:#fff;border-radius:14px;padding:28px;border:1px solid var(--line)}
-.testi-card b{font-family:"Fraunces",serif;color:var(--brass-dark);font-size:16px;display:block;margin-bottom:10px}
-.testi-card p{font-size:14.5px;margin:0}
+/* ---------- diferencial ---------- */
+.diff{background:var(--sand-2)}
+.diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px}
+@media (max-width:880px){.diff-grid{grid-template-columns:repeat(2,1fr)}}
+.diff-item{padding:24px 22px 24px 0;border-left:2px solid var(--brass-light);padding-left:20px}
+.diff-item h3{font-size:16.5px;margin-bottom:6px}
+.diff-item p{font-size:14px;margin:0;max-width:34ch}
 
-/* ---------- redes ---------- */
-.social-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
-@media (max-width:760px){.social-grid{grid-template-columns:repeat(2,1fr)}}
-.social-card{
-  position:relative;aspect-ratio:4/5;border-radius:12px;overflow:hidden;
-  background:linear-gradient(200deg,#2c2c2c,#4a4a45);
-  display:flex;flex-direction:column;justify-content:space-between;padding:16px;color:#fff;
+/* ---------- autoridade / credenciais ---------- */
+.doc{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
+@media (max-width:760px){.doc{grid-template-columns:1fr}}
+.doc-photo{
+  aspect-ratio:3/4;border-radius:16px;overflow:hidden;position:relative;
+  background:linear-gradient(165deg,var(--sand-2),var(--sand));
+  border:1.5px dashed var(--brass-light);
 }
-.social-card .play{
-  width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);
-  display:flex;align-items:center;justify-content:center;align-self:center;margin:auto;
+.doc-photo img{width:100%;height:100%;object-fit:cover}
+.doc-photo .fallback{
+  display:none;position:absolute;inset:0;align-items:center;justify-content:center;
+  color:var(--brass-dark);font-size:12.5px;text-align:center;padding:20px;font-family:"Poppins",sans-serif;line-height:1.6;
 }
-.social-card .cap{font-size:12.5px;font-family:"Poppins",sans-serif;line-height:1.5}
+.doc-photo.img-missing img{display:none}
+.doc-photo.img-missing .fallback{display:flex}
+.creds{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid var(--line)}
+.creds li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:18px;font-size:14.5px}
+.creds b{font-family:"Poppins",sans-serif;font-weight:600;font-size:11px;color:var(--brass-dark);flex:0 0 100px;padding-top:2px;letter-spacing:.06em;text-transform:uppercase}
+
+/* ---------- formação / nova frente ---------- */
+.edu{background:var(--sand);border-radius:20px;padding:56px;margin-top:0}
+@media (max-width:640px){.edu{padding:32px}}
+.edu h2{max-width:42ch}
+
+/* ---------- instagram ---------- */
+.ig-card{
+  display:flex;align-items:center;gap:22px;border:1px solid var(--line);border-radius:16px;
+  padding:26px 30px;background:var(--sand-2);flex-wrap:wrap;
+}
+.ig-icon{
+  width:52px;height:52px;border-radius:14px;flex:0 0 auto;
+  background:linear-gradient(145deg,#AD8A52,#8F6F3E);display:flex;align-items:center;justify-content:center;
+}
+.ig-icon svg{width:26px;height:26px;fill:#fff}
+.ig-card .txt{flex:1 1 260px}
+.ig-card b{font-family:"Fraunces",serif;font-size:17px;color:var(--ink);display:block;margin-bottom:3px}
+.ig-card span{font-size:13.5px;color:var(--muted)}
 
 /* ---------- contato ---------- */
 .contact{background:var(--sand-2)}
@@ -201,22 +210,14 @@ form.contact-form{margin-top:34px;text-align:left}
   border:1.5px solid var(--ink);border-radius:999px;padding:15px 22px;background:#fff;
   outline:none;transition:border-color .15s ease;
 }
-.field textarea{border-radius:20px;min-height:120px;resize:vertical}
+.field textarea{border-radius:20px;min-height:110px;resize:vertical}
 .field input:focus,.field textarea:focus{border-color:var(--brass)}
 form.contact-form .btn{width:100%;justify-content:center;border:none;cursor:pointer}
 .contact-note{font-size:12.5px;color:var(--muted);margin-top:14px;text-align:center}
-
-/* ---------- médica / credenciais ---------- */
-.doc{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
-@media (max-width:760px){.doc{grid-template-columns:1fr}}
-.doc-photo{
-  aspect-ratio:3/4;border-radius:16px;background:linear-gradient(165deg,var(--sand-2),var(--sand));
-  border:1.5px dashed var(--brass-light);display:flex;align-items:center;justify-content:center;
-  color:var(--brass-dark);font-size:12.5px;text-align:center;padding:20px;font-family:"Poppins",sans-serif;
+.privacy-note{
+  font-size:12.5px;color:var(--brass-dark);background:#FBF8F2;border:1px solid var(--brass-light);
+  border-radius:12px;padding:14px 18px;margin-top:22px;text-align:left;line-height:1.6;
 }
-.creds{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid var(--line)}
-.creds li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:18px;font-size:14.5px}
-.creds b{font-family:"Poppins",sans-serif;font-weight:600;font-size:11px;color:var(--brass-dark);flex:0 0 96px;padding-top:2px;letter-spacing:.06em;text-transform:uppercase}
 
 /* ---------- faq ---------- */
 details{border-bottom:1px solid var(--line);padding:2px 0}
@@ -246,10 +247,11 @@ footer a{text-decoration:underline}
     <a href="#inicio" class="logo">Dra. <b>Gina Montezuma</b></a>
     <nav class="menu" aria-label="Menu principal">
       <a href="#sobre">Sobre</a>
-      <a href="#especialidades">Especialidades</a>
-      <a href="#depoimentos">Depoimentos</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#autoridade">Trajetória</a>
+      <a href="#formacao">Formação</a>
       <a href="#duvidas">Dúvidas</a>
-      <a href="#contato" class="btn btn-light">Agende sua consulta</a>
+      <a href="#contato" class="btn btn-light">Solicitar informações</a>
     </nav>
   </div>
 </header>
@@ -265,24 +267,30 @@ footer a{text-decoration:underline}
   </div>
   <div class="hero-inner">
     <div class="hero-col">
-      <p class="eyebrow" style="color:#D9C49B">Dra. Gina Montezuma · <span class="tbd" title="Confirmar especialidade real">Medicina Estética e Bem-Estar</span></p>
-      <h1><span class="tbd" title="Headline placeholder — trocar por algo que reflita a proposta real da Dra. Gina">Sua beleza, cuidada com ciência e sensibilidade.</span></h1>
-      <p class="lead">Atendimento personalizado, resultado natural e segurança em cada etapa — em <span class="tbd" title="confirmar cidade">[cidade a confirmar]</span>.</p>
-      <a class="btn btn-primary" href="#contato">Agende sua consulta</a>
-      <p class="hero-cta-note">Resposta em até 1 dia útil.</p>
+      <p class="eyebrow" style="color:#D9C49B">Cirurgiã-dentista · Mestre em Ortodontia · Especialista em HOF</p>
+      <h1>Cuidado que começa pelo planejamento — não pela promessa.</h1>
+      <p class="lead">Cada avaliação considera anatomia, histórico e objetivos individuais. Antes de falar em tratamento, é preciso compreender o caso — com clareza sobre possibilidades e limites.</p>
+      <p class="cred">Dra. Gina Montezuma · CRO-CE 5039 · Fortaleza-CE</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contato">Solicitar informações</a>
+        <a class="btn btn-light" style="background:transparent;border-color:rgba(255,255,255,.55);color:#fff" href="#sobre">Conhecer a proposta</a>
+      </div>
+      <p class="hero-cta-note">Resposta pela equipe em até 1 dia útil.</p>
     </div>
   </div>
-  <div class="hero-photo-note" aria-hidden="true">
-    <div class="ph">📷<br>Foto da Dra. Gina<br>ou da clínica aqui<br><span style="opacity:.7">(substituir este bloco)</span></div>
+  <div class="hero-photo" id="heroPhoto">
+    <img src="assets/gina-retrato.jpg" alt="Retrato da Dra. Gina Montezuma" onerror="this.parentElement.classList.add('img-missing')">
+    <div class="fallback">📷<br>Foto real recebida —<br>salvar em<br><code style="opacity:.85">assets/gina-retrato.jpg</code></div>
   </div>
 </section>
 
-<!-- STATS -->
-<div class="stats">
-  <div class="stats-inner">
-    <div class="stat"><b class="tbd" title="Número real">+XX</b><span>anos de atuação</span></div>
-    <div class="stat"><b class="tbd" title="Número real">+X.XXX</b><span>pacientes atendidos</span></div>
-    <div class="stat"><b class="tbd" title="Número real">+X.XXX</b><span>procedimentos realizados</span></div>
+<!-- TERRITÓRIOS (substitui a barra de números da Higiia — nenhum número real foi fornecido) -->
+<div class="territories">
+  <div class="terr-inner">
+    <div class="terr"><b>Harmonização Orofacial</b><span>rejuvenescimento responsável</span></div>
+    <div class="terr"><b>Ortodontia</b><span>planejamento do sorriso</span></div>
+    <div class="terr"><b>Odontologia individualizada</b><span>técnica, organização e cuidado</span></div>
+    <div class="terr"><b>CRO-CE 5039</b><span>identificação profissional</span></div>
   </div>
 </div>
 
@@ -290,68 +298,109 @@ footer a{text-decoration:underline}
 <section id="sobre">
   <div class="wrap about">
     <div class="collage" aria-hidden="true">
-      <div class="block b1">📷<br>Foto do consultório<br>ou da Dra. Gina</div>
-      <div class="block b2">📷<br>Foto secundária</div>
+      <div class="block b1">📷<br>Retrato da Dra. Gina<br><code style="opacity:.85">assets/gina-retrato.jpg</code></div>
+      <div class="block b2">📷<br>Foto de estudo/planejamento<br>(sugerida nos roteiros — a produzir)</div>
     </div>
     <div>
       <p class="eyebrow">Sobre</p>
-      <h2>Cuidado que olha para a pessoa, não só para o procedimento.</h2>
-      <p class="tbd" title="Substituir por bio real da Dra. Gina">[Parágrafo de apresentação — formação, trajetória, filosofia de atendimento da Dra. Gina Montezuma. Substituir por texto real; não inventar formação ou tempo de experiência.]</p>
-      <p class="tbd" title="Substituir por texto real">[Segundo parágrafo — diferencial de abordagem, valores do consultório, o que a paciente pode esperar da experiência.]</p>
-      <a class="btn btn-outline" href="#duvidas">Saiba mais</a>
+      <h2>Conhecimento técnico que se transforma em prática, organização e cuidado.</h2>
+      <p>Minha trajetória foi construída entre a clínica, a Ortodontia, a Harmonização Orofacial, a docência e a gestão de serviços de saúde. Ao longo desse caminho, aprendi que excelência não depende apenas de saber fazer — depende também de tomar decisões responsáveis, estruturar processos e continuar aprendendo.</p>
+      <p>Acredito em uma odontologia que respeita a individualidade de cada pessoa: cada avaliação considera anatomia, histórico, objetivos e limites — sem fórmulas prontas nem promessa de resultado.</p>
+      <a class="btn btn-outline" href="#autoridade">Ver formação e trajetória</a>
     </div>
   </div>
 </section>
 
-<!-- ESPECIALIDADES -->
-<section id="especialidades" style="background:var(--sand-2)">
+<!-- ÁREAS DE ATUAÇÃO CLÍNICA -->
+<section id="atuacao" style="background:var(--sand-2)">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Especialidades</h2>
-      <a class="btn btn-outline" href="#contato">Falar sobre meu caso</a>
+      <div>
+        <p class="eyebrow">Atuação clínica</p>
+        <h2>Duas áreas, um mesmo método.</h2>
+      </div>
+      <a class="btn btn-outline" href="#contato">Solicitar informações</a>
     </div>
-    <div class="tbd-box"><b>Placeholder.</b> Os 5 procedimentos abaixo são genéricos de estética facial/bem-estar, só para preencher o layout no padrão da referência. Substitua pelos procedimentos que a Dra. Gina realmente realiza — sem isso o site pode prometer algo que ela não oferece.</div>
-    <div class="cards">
-      <div class="proc-card"><span>Harmonização facial</span></div>
-      <div class="proc-card"><span>Toxina botulínica</span></div>
-      <div class="proc-card"><span>Preenchimento labial</span></div>
-      <div class="proc-card"><span>Bioestimuladores</span></div>
-      <div class="proc-card"><span>Skinbooster</span></div>
+    <div class="areas">
+      <div class="area-card">
+        <span class="tag">HOF</span>
+        <h3>Harmonização Orofacial</h3>
+        <p>Planejamento individualizado com foco em naturalidade — respeitando anatomia, expectativas e limites de cada pessoa. Toda indicação parte de avaliação, não de uma lista pronta de procedimentos.</p>
+      </div>
+      <div class="area-card">
+        <span class="tag">Ortodontia</span>
+        <h3>Planejamento do sorriso</h3>
+        <p>Avaliação clínica, histórico e objetivos individuais orientam o plano de tratamento. O tempo e a abordagem variam de pessoa para pessoa, conforme resposta ao acompanhamento.</p>
+      </div>
     </div>
-    <p style="margin-top:30px;font-family:'Fraunces',serif;font-size:20px;color:var(--ink)">Outras áreas</p>
-    <div class="chips">
-      <span class="chip">Rosto</span>
-      <span class="chip">Pele</span>
-      <span class="chip">Corpo</span>
-      <span class="chip">Bem-estar</span>
-    </div>
+    <p style="margin-top:24px;font-size:13.5px;color:var(--muted)">Conteúdo informativo. Não substitui avaliação individual — decisões de tratamento são sempre feitas em consulta.</p>
   </div>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="testi-wrap" id="depoimentos">
+<!-- DIFERENCIAL -->
+<section class="diff" id="diferencial">
   <div class="wrap">
-    <p class="eyebrow">Pacientes</p>
-    <h2>O que dizem sobre o atendimento</h2>
-    <div class="tbd-box"><b>Placeholder — NÃO publicar assim.</b> Os depoimentos abaixo são exemplos de estrutura (como os da Higiia, com iniciais), não relatos reais. Depoimento fabricado atribuído a paciente real é antiético e pode configurar propaganda enganosa em publicidade médica (CFM). Troque por depoimentos reais e autorizados, ou remova a seção até ter.</div>
-    <div class="testi-track">
-      <div class="testi-card"><b>[Iniciais]</b><p>[Exemplo de estrutura — depoimento real do paciente entra aqui, com autorização.]</p></div>
-      <div class="testi-card"><b>[Iniciais]</b><p>[Exemplo de estrutura — depoimento real do paciente entra aqui, com autorização.]</p></div>
+    <p class="eyebrow">O diferencial</p>
+    <h2>Técnica, gestão e cuidado não são áreas separadas.</h2>
+    <p class="lead" style="color:var(--body);font-size:16.5px">Elas se fortalecem quando são pensadas em conjunto — é nesse encontro entre conhecimento, organização e cuidado que está a proposta do meu trabalho.</p>
+    <div class="diff-grid">
+      <div class="diff-item"><h3>Técnica</h3><p>Sustenta a decisão. Exige estudo, atualização e respeito aos limites da própria competência.</p></div>
+      <div class="diff-item"><h3>Gestão</h3><p>Cria condições para a técnica acontecer: processos, recursos, comunicação e organização.</p></div>
+      <div class="diff-item"><h3>Cuidado</h3><p>Dá sentido ao trabalho — escuta, respeito, segurança e comunicação clara.</p></div>
+      <div class="diff-item"><h3>Formação</h3><p>Integra essas dimensões: planejamento, comunicação e tomada de decisão além da técnica isolada.</p></div>
     </div>
   </div>
 </section>
 
-<!-- REDES -->
+<!-- AUTORIDADE / CREDENCIAIS -->
+<section id="autoridade">
+  <div class="wrap doc">
+    <div class="doc-photo" id="docPhoto">
+      <img src="assets/gina-retrato.jpg" alt="Dra. Gina Montezuma" onerror="this.parentElement.classList.add('img-missing')">
+      <div class="fallback">📷<br>Foto real recebida —<br>salvar em<br><code style="opacity:.85">assets/gina-retrato.jpg</code></div>
+    </div>
+    <div>
+      <p class="eyebrow">Formação e trajetória</p>
+      <h2>Dra. Gina Montezuma</h2>
+      <p>Cirurgiã-dentista com formação em Ortodontia e Harmonização Orofacial, atuação em docência e em gestão de serviços de saúde. Uma trajetória construída entre a clínica, a sala de aula e a gestão — sempre com a mesma base: decisão responsável, organização e cuidado com quem é atendido.</p>
+      <ul class="creds">
+        <li><b>CRO</b><span>CRO-CE 5039</span></li>
+        <li><b>Formação</b><span>Cirurgiã-dentista · Mestre em Ortodontia · Especialista em Harmonização Orofacial</span></li>
+        <li><b>Docência</b><span class="tbd" title="Confirmar instituição(ões) e disciplina(s) atuais antes de publicar">Atuação docente em Odontologia — <span class="tbd">confirmar instituição e disciplina</span></span></li>
+        <li><b>Gestão</b><span>Experiência em gestão da qualidade e liderança em serviços públicos de saúde bucal.</span></li>
+      </ul>
+      <p class="tbd-box" style="margin-top:20px"><b>Nota de compliance.</b> A experiência institucional (gestão pública) aparece aqui apenas como trajetória profissional — por orientação dos próprios documentos da Dra. Gina, o cargo e a imagem da instituição pública não devem ser usados como endosso comercial da prática privada ou de cursos. Revisar nomes exatos de cargo/instituição antes de publicar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAÇÃO / NOVA FRENTE EDUCACIONAL -->
+<section style="background:var(--sand-2)" id="formacao">
+  <div class="wrap">
+    <div class="edu">
+      <p class="eyebrow">Em preparação</p>
+      <h2>Uma nova frente para formar profissionais.</h2>
+      <p>Cursos, capacitações e mentorias para profissionais que desejam desenvolver conhecimento técnico, visão prática e mais segurança para tomar decisões na carreira — nascidos da união entre experiência clínica, docência, gestão e formação profissional.</p>
+      <p>Os próximos programas ainda estão sendo estruturados, com atenção ao público, aos objetivos de aprendizagem e à experiência de quem participa.</p>
+      <a class="btn btn-primary" href="#contato">Cadastrar interesse</a>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
 <section>
   <div class="wrap">
-    <p class="eyebrow" style="text-align:center;display:block">Conteúdo</p>
-    <h2 style="text-align:center">Acompanhe nas redes sociais</h2>
-    <div class="tbd-box"><b>Placeholder.</b> Substituir pelos posts/reels reais (embed do Instagram) da Dra. Gina, ou remover a seção se ela ainda não publica conteúdo educativo.</div>
-    <div class="social-grid">
-      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
-      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
-      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
-      <div class="social-card"><span></span><span class="play">▶</span><span class="cap">[Legenda do conteúdo]</span></div>
+    <p class="eyebrow">Conteúdo</p>
+    <h2>Acompanhe no Instagram</h2>
+    <div class="ig-card">
+      <div class="ig-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 2 .25 2.6.5.7.28 1.2.6 1.7 1.1.5.5.9 1 1.1 1.7.25.6.44 1.4.5 2.6.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 2-.5 2.6a4.6 4.6 0 0 1-1.1 1.7 4.6 4.6 0 0 1-1.7 1.1c-.6.25-1.4.44-2.6.5-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-2-.25-2.6-.5a4.6 4.6 0 0 1-1.7-1.1 4.6 4.6 0 0 1-1.1-1.7c-.25-.6-.44-1.4-.5-2.6C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-2 .5-2.6.28-.7.6-1.2 1.1-1.7.5-.5 1-.9 1.7-1.1.6-.25 1.4-.44 2.6-.5C9.4 2.2 9.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5 0-4.75.07-1 .05-1.5.2-1.86.34-.47.18-.8.4-1.15.75-.35.35-.57.68-.75 1.15-.14.36-.3.87-.34 1.86C3.1 8.5 3.1 8.86 3.1 12s0 3.5.07 4.75c.05 1 .2 1.5.34 1.86.18.47.4.8.75 1.15.35.35.68.57 1.15.75.36.14.87.3 1.86.34 1.25.06 1.6.07 4.75.07s3.5 0 4.75-.07c1-.05 1.5-.2 1.86-.34.47-.18.8-.4 1.15-.75.35-.35.57-.68.75-1.15.14-.36.3-.87.34-1.86.06-1.25.07-1.6.07-4.75s0-3.5-.07-4.75c-.05-1-.2-1.5-.34-1.86a3 3 0 0 0-.75-1.15 3 3 0 0 0-1.15-.75c-.36-.14-.87-.3-1.86-.34C15.5 4 15.14 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm4.8-2.1a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16z"/></svg>
+      </div>
+      <div class="txt">
+        <b>@dra.ginamontezuma</b>
+        <span>Conteúdo educativo sobre HOF, Ortodontia, gestão e docência.</span>
+      </div>
+      <a class="btn btn-outline" href="https://www.instagram.com/dra.ginamontezuma/" target="_blank" rel="noopener">Seguir no Instagram</a>
     </div>
   </div>
 </section>
@@ -360,52 +409,40 @@ footer a{text-decoration:underline}
 <section class="contact" id="contato">
   <div class="wrap contact-inner">
     <p class="eyebrow">Contato</p>
-    <h2>Entre em contato!</h2>
-    <p>Preencha os dados abaixo — a mensagem é enviada diretamente pelo WhatsApp.</p>
+    <h2>Solicite informações</h2>
+    <p>Preencha os dados abaixo — a mensagem é enviada diretamente pelo WhatsApp da equipe.</p>
     <form class="contact-form" id="contactForm">
       <div class="field"><input type="text" id="f-nome" placeholder="Nome" required></div>
       <div class="field"><input type="tel" id="f-whats" placeholder="WhatsApp" required></div>
       <div class="field"><input type="email" id="f-email" placeholder="E-mail"></div>
-      <div class="field"><textarea id="f-msg" placeholder="Mensagem"></textarea></div>
+      <div class="field"><textarea id="f-msg" placeholder="Sua dúvida ou mensagem (opcional)"></textarea></div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+    <p class="privacy-note">Por privacidade, não envie fotos, exames ou informações clínicas por aqui. A equipe entra em contato para explicar disponibilidade, local e como funciona o atendimento — sem diagnóstico ou indicação por mensagem.</p>
     <p class="contact-note">Ao enviar, você será direcionado ao WhatsApp com a mensagem já preenchida.</p>
   </div>
 </section>
 
-<!-- SOBRE A MÉDICA / CREDENCIAIS -->
-<section>
-  <div class="wrap doc">
-    <div class="doc-photo">📷<br>Foto da Dra. Gina<br>Montezuma aqui</div>
-    <div>
-      <p class="eyebrow">Quem atende</p>
-      <h2>Dra. Gina Montezuma</h2>
-      <p class="tbd" title="Substituir por bio profissional real">[Bio profissional curta — formação, especialização, tempo de atuação. Não inventar títulos ou registros.]</p>
-      <ul class="creds">
-        <li><b>CRM</b><span class="tbd" title="Número real do CRM, obrigatório em publicidade médica">CRM/[UF] XXXXX — confirmar</span></li>
-        <li><b>RQE</b><span class="tbd" title="Se aplicável">RQE XXXX — confirmar, se houver</span></li>
-        <li><b>Formação</b><span class="tbd" title="Formação real">[Graduação, residência, especializações reais]</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
-<section id="duvidas" style="background:var(--sand-2)">
+<section id="duvidas">
   <div class="wrap">
     <p class="eyebrow">Dúvidas frequentes</p>
-    <h2>Perguntas que as pacientes costumam fazer</h2>
+    <h2>O que uma avaliação costuma esclarecer</h2>
     <details>
-      <summary>Como funciona a primeira consulta?</summary>
-      <p class="tbd" title="Descrever processo real">[Descrever o processo real de avaliação/consulta da Dra. Gina.]</p>
+      <summary>Como funciona a avaliação?</summary>
+      <p>A consulta começa pela escuta e pela compreensão do que a pessoa busca. Histórico, exame clínico e, quando indicado, exames complementares ajudam a construir uma visão individualizada — para então apresentar possibilidades, limites e etapas do cuidado.</p>
     </details>
     <details>
-      <summary>Quais formas de pagamento são aceitas?</summary>
-      <p class="tbd" title="Confirmar formas de pagamento">[Confirmar: cartão, parcelamento, convênio, etc.]</p>
+      <summary>O conteúdo publicado nas redes substitui uma consulta?</summary>
+      <p>Não. O conteúdo público serve para orientar e ampliar o conhecimento — não para concluir diagnóstico, indicar tratamento ou comparar resultados entre pessoas diferentes. A decisão clínica sempre depende de avaliação individual.</p>
     </details>
     <details>
-      <summary>Onde fica o consultório?</summary>
-      <p class="tbd" title="Endereço real">[Endereço completo e referências de localização.]</p>
+      <summary>Quais áreas a Dra. Gina atende?</summary>
+      <p>Harmonização Orofacial e Ortodontia, sempre a partir de avaliação individual — sem lista pronta de procedimentos.</p>
+    </details>
+    <details>
+      <summary>Onde fica o atendimento?</summary>
+      <p class="tbd" title="Endereço real do consultório — não informado nos documentos recebidos">Atendimento privado em Fortaleza-CE. [Endereço completo a confirmar antes de publicar.]</p>
     </details>
   </div>
 </section>
@@ -416,28 +453,28 @@ footer a{text-decoration:underline}
 
 <footer>
   <div class="wrap">
-    <div>Dra. Gina Montezuma · <span class="tbd" title="confirmar especialidade">Especialidade a confirmar</span> · <span class="tbd" title="confirmar cidade">Cidade a confirmar</span></div>
-    <div><a href="#contato">Agendar consulta</a></div>
+    <div>Dra. Gina Montezuma · CRO-CE 5039 · Cirurgiã-dentista, Mestre em Ortodontia, Especialista em HOF · Fortaleza-CE</div>
+    <div><a href="https://www.instagram.com/dra.ginamontezuma/" target="_blank" rel="noopener">Instagram</a> · <a href="#contato">Solicitar informações</a></div>
   </div>
 </footer>
 
 <script>
-// PLACEHOLDER: trocar pelo WhatsApp real da Dra. Gina (formato 55DDNÚMERO, só dígitos)
+// PLACEHOLDER: trocar pelo WhatsApp real da equipe da Dra. Gina (formato 55DDNÚMERO, só dígitos)
 var WHATSAPP_NUMERO = "55XXXXXXXXXXX";
 
 function waLink(msg){
   return "https://wa.me/" + WHATSAPP_NUMERO + "?text=" + encodeURIComponent(msg);
 }
 
-document.getElementById('waFloat').href = waLink("Olá! Gostaria de mais informações.");
+document.getElementById('waFloat').href = waLink("Olá! Gostaria de informações sobre a avaliação em HOF/Ortodontia em Fortaleza. Poderiam me informar disponibilidade, local e como funciona o atendimento?");
 
 document.getElementById('contactForm').addEventListener('submit', function(e){
   e.preventDefault();
   var nome = document.getElementById('f-nome').value.trim();
   var whats = document.getElementById('f-whats').value.trim();
   var msg = document.getElementById('f-msg').value.trim();
-  var text = "Olá! Meu nome é " + nome + " (WhatsApp: " + whats + ").";
-  if (msg) text += " Mensagem: " + msg;
+  var text = "Olá! Meu nome é " + nome + " (WhatsApp: " + whats + "). Gostaria de informações sobre a avaliação em HOF/Ortodontia e como funciona o atendimento.";
+  if (msg) text += " Dúvida/mensagem: " + msg;
   window.open(waLink(text), "_blank", "noopener");
 });
 </script>
